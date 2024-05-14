@@ -74,3 +74,4 @@ npm start
 php artisan serve
 ```
 resources -> views -> DELETE:**"welcome.blade.php"**
+# envio-clinica
