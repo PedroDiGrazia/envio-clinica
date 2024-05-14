@@ -9,7 +9,6 @@ Crie o Arquivo .env
 cp .env.example .env
 ```
 
-
 Atualize as variáveis de ambiente do arquivo .env
 ```dosini
 APP_NAME=Laravel
@@ -19,11 +18,11 @@ DB_PASSWORD=root
 ```
 
 
-Suba os containers do projeto
+Suba os containers do projeto ->
+
 ```sh
 docker compose up -d
 ```
-
 
 Acessar o container
 ```sh
@@ -42,18 +41,21 @@ Gerar a key do projeto Laravel
 php artisan key:generate
 ```
 
-
 Acesse o projeto
 [http://localhost:8080](http://localhost:8080)
 
 Acesse o phpmyadmin
 [http://localhost:8081](http://localhost:8081)
 
+poweshell ->
  ```sh
  npm install --save-dev electron
  ```
+```sh
+npm start
+```
+
  git bash -> 
- 
  ```sh
  php artisan migrate
  ```
@@ -70,9 +72,6 @@ MAIL_ENCRYPTION=tls
 MAIL_FROM_ADDRESS="no-reply@mailtrap.club"
 MAIL_FROM_NAME="${APP_NAME}"
 ````
-```sh
-npm start
-```
 
 ```sh
 php artisan serve
