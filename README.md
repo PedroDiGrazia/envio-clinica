@@ -16,7 +16,18 @@ APP_URL=http://localhost:8080
 
 DB_PASSWORD=root
 ```
-
+Caso não haja arquivo .env copie o .env.example
+- No arquivo .env substitua:
+```plaintext
+MAIL_MAILER=smtp
+MAIL_HOST=sandbox.smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=2ca42311cbb634
+MAIL_PASSWORD=ea9bc3f3a17679
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS="no-reply@mailtrap.club"
+MAIL_FROM_NAME="${APP_NAME}"
+````
 
 Suba os containers do projeto ->
 
@@ -59,20 +70,6 @@ npm start
  ```sh
  php artisan migrate
  ```
-
-Caso não haja arquivo .env copie o .env.example
-- No arquivo .env substitua:
-```plaintext
-MAIL_MAILER=smtp
-MAIL_HOST=sandbox.smtp.mailtrap.io
-MAIL_PORT=2525
-MAIL_USERNAME=2ca42311cbb634
-MAIL_PASSWORD=ea9bc3f3a17679
-MAIL_ENCRYPTION=tls
-MAIL_FROM_ADDRESS="no-reply@mailtrap.club"
-MAIL_FROM_NAME="${APP_NAME}"
-````
-
 ```sh
 php artisan serve
 ```
